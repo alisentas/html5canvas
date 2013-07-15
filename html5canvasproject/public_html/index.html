@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Ultimate Canvas Circle Experiment</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+<h2>Ultimate HTML5 Canvas Circle Experiment</h2>
+<canvas id="CANVAS" width="500" height="400">
+    TIP: Change canvas height and widht for bigger or smaller animations
+    Your browser doesnt support canvas tag, upgrade it.
+</canvas>
+<div id="settings">
+    <button id="ANIMATE" onclick="controls.animate();">Animate</button>
+    <button id = "BOUNCE" onclick="controls.bounce();">Add Circle</button>
+    <button onclick="controls.addCirc();">Add Circle</button>
+    <button onclick="controls.removeCirc();">Remove Circle</button>
+    <button onclick="controls.incRadius();">Increase Radius</button>
+    <button onclick="controls.decRadius();">Decrease Radius</button>
+    <button id="FILL" onclick="controls.fill();">Don't Fill</button>
+    <button id="STROKE" onclick="controls.stroke();">Don't Stroke</button>
+    <button onclick="controls.incFPS();">Increase FPS</button>
+    <button onclick="controls.decFPS();">Decrease FPS</button>
+    <div id="controls">
+        <h4>Position</h4>
+        <button class="move" onclick="controls.moveUp();">▲</button>
+        <br>
+        <button class="move" onclick="controls.moveLeft();">◄</button>
+        <button class="move" onclick="controls.moveRight();">►</button>
+        <br>
+        <button class="move" onclick="controls.moveDown();">▼</button>
+    </div>
+    <div id="indicators">
+        <b><span id="circCount">Circles: 15</span></b><br>
+        <b><span id="radius">Radius: 10</span></b><br>
+        <b><span id="fpsgauge">FPS: 20</span></b>
+    </div>
+</div>
+<script src='js/script.js'></script>
+</body>
+</html>
