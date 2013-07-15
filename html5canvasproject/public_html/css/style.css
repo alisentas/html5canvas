@@ -1,0 +1,59 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 5px;
+}
+#CANVAS {
+    background-color: azure;
+    float:left;
+}
+#controls {
+    padding: 10px;
+    border: 1px solid black;
+}
+h1,h2,h3,h4,h5,h6{
+    text-align: center;
+}
+/***FIRST STYLE THE BUTTON***/
+button{
+    display: block;
+    cursor:pointer; /*forces the cursor to change to a hand when the button is hovered*/
+    padding:5px 25px; /*add some padding to the inside of the button*/
+    background:#35b128; /*the colour of the button*/
+    border:1px solid #33842a; /*required or the default border for the browser will appear*/
+    /*give the button curved corners, alter the size as required*/
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    /*give the button a drop shadow*/
+    -webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
+    -moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
+    box-shadow: 0 0 4px rgba(0,0,0, .75);
+    /*style the text*/
+    color:#f3f3f3;
+    font-size:1.1em;
+}
+    /***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
+button:hover, button:focus{
+    background-color :#399630; /*make the background a little darker*/
+    /*reduce the drop shadow size to give a pushed button effect*/
+    -webkit-box-shadow: 0 0 1px rgba(0,0,0, .75);
+    -moz-box-shadow: 0 0 1px rgba(0,0,0, .75);
+    box-shadow: 0 0 1px rgba(0,0,0, .75);
+}
+.move {
+    display: inline-block;
+}
+#controls {
+    width: 200px;
+    border: 1px dashed teal;
+    text-align: center;
+}
+#controls h4 {
+    margin: 0;
+    padding: 0;
+}
+#settings {
+    display: inline-block;
+}
